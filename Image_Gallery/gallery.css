@@ -1,0 +1,20 @@
+body {
+    padding-top: 70px;
+}
+
+.jumbotron {
+    background-color:#d1d1e0
+}
+
+.navbar-inverse {
+    background-color: #00001a
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color:white;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white; /*will overwite the glyphicon - if we have a problem with overwriting bootstrap element we need to 
+    inspect it in the developer tool in Chrom and see the exact inheritance to overwrite*/
+}

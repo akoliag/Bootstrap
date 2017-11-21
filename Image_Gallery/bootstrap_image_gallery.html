@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="uft-8">
+    <title>Bootstrap image gallery</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!--this link is necessary to use font awesome icons-->
+    <link rel="stylesheet" href="gallery.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <!--needs to go before js script as js relies on jquery-->
+    <script src="bootstrap.js"></script>
+    <!--it will make responsive navbar work-->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top
+    ">
+        <div class="container">
+            <!--container class will indent the site content, if we add the container class above 
+                    the nav, the navbar will be cut at the edges and we don't want this to happen-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                              <span class="sr-only">Toggle navigation</span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                        </button>
+                <!--this button will add the hamburger to the page if we hit its mobile size-->
+                <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span>IMGS</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!--eth within this collapse navbar will be collapsed when we hit mobile size of the app-->
+                <div class="nav navbar-nav">
+                    <!--instead of div we can use ul in this case as well-->
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </div>
+                <div class="nav navbar-nav navbar-right">
+                    <!--instead of div we can use ul in this case as well-->
+                    <li><a href="#">Sign up</a></li>
+                    <li><a href="#">Log in</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="jumbotron">
+            <h1><i class="fa fa-camera-retro" aria-hidden="true"></i> The Image Gallery</h1>
+            <p>Let's admire a bunch of amazingly beautiful images taken all over the world!</p>
+        </div>
+        <div class="row">
+            <!--we can put all 9 images in the same row, we don't need a separate row for every 3 images-->
+            <div class="col-lg-4">
+                <div class="thumbnail">
+                    <!--thumbnail class will scale down the image size and put it in the border-->
+                    <img src="https://source.unsplash.com/Jhs_eJtxuCM" alt="Vernal Falls Sunset, Yosemite Valley, US">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="thumbnail">
+                    <img src="https://source.unsplash.com/dfo06_DqxpA" alt="Sequoia National Forest, US">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="thumbnail">
+                    <img src="https://source.unsplash.com/4vm6v0KmCS8" alt="Antelope Canyon, US">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="thumbnail">
+                    <!--thumbnail class will scale down the image size and put it in the border-->
+                    <img src="https://source.unsplash.com/fkqBXZbevXg" alt="Watu Lumbung, Indonesia">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="thumbnail">
+                    <img src="https://source.unsplash.com/AwYfijxeBag" alt="Canyonlands National Park, United States">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="thumbnail">
+                    <img src="https://source.unsplash.com/J-yDj62KSxE" alt="Hout Bay, Cape Town, South Africa">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="thumbnail">
+                    <!--thumbnail class will scale down the image size and put it in the border-->
+                    <img src="https://source.unsplash.com/6U4wogjLArk" alt="Lago di Braies, Braies, Italy">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="thumbnail">
+                    <img src="https://source.unsplash.com/zAK5_9WFBCU" alt="Blackpool, United Kingdom">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="thumbnail">
+                    <img src="https://source.unsplash.com/DwIC9fWemGY" alt="St.Peter Ahrntal, South Tyrol, Italy">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
